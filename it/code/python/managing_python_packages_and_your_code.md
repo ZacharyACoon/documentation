@@ -33,8 +33,8 @@ iii. PyEnv to install a specific candidate.
 `pyenv install <version>`
  
 iv. Access the installed version.
-* Linux / Mac `~/.pyenv/versions/versions/<version>/bin/python --version`
-* Windows `%USERPROFILE%\.pyenv\pyenv-win\versions\<version>\Lib\python --version`
+* Linux / Mac `~/.pyenv/versions/version/<version>/bin/python --version`
+* Windows ``%USERPROFILE%\.pyenv\pyenv-win\versions\<version>\Lib\python --version``
 
  🎉 Congrats!
 
@@ -55,7 +55,7 @@ b. Configure .gitignore to ignore your virtual environment.
 
 c. Create a virtual environment using the earlier installed python version:
 * Linux/Mac `~/.pyenv/versions/<version>/bin/python -m venv venv`
-* Windows: `%USERPROFILE%\.pyenv\pyenv-win\versions\<version>\Lib\python -m venv venv`
+* Windows: ``%USERPROFILE%\.pyenv\pyenv-win\versions\<version>\Lib\python -m venv venv``
 
 ### 2.2 Using the Virtual Environment.
 From within the virtual environment, you may access python functionality as normal:
@@ -213,4 +213,17 @@ ENV PATH="/app/venv/bin:${PATH}"
 
 # default run command
 CMD python -u main.py
+```
+
+## 6. Standardization
+
+### 6.1 PEP8 - https://peps.python.org/pep-0008
+
+Python has several defined standards for writing code.
+
+#### Flake 8 to Lint your Code
+You can use flake8 to help you maintain sylistic standards and spot code smells early.
+```
+venv/bin/pip install flake8
+venv/bin/flake8 src/
 ```
