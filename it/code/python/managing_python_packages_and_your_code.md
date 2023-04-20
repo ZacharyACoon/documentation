@@ -1,7 +1,10 @@
 
 # Managing Python, Packages, and your Code
 
-Tags: python, environment, code, version, pyenv, virtual environment, environment, venv, pip, package, library, sdk, docker, setup
+Tags: python, environment, code, version, pyenv, virtual environment, environment, venv, pip, package, library, sdk, docker, setup, git
+
+Assumes Skills: git, terminal
+
 
 ## Summary
 
@@ -10,7 +13,7 @@ Python is a high level programming language renowned for its ease of use and rea
 
 ## 1. Python Versions with PyEnv
 
-There are many versions of python and no telling which you may need for a project.  Further, incorrectly installing incompatible versions or packages could damage your system and will likely unmanagable conflicts for your projects.  It is important to carefully manage your python and package versions *independently* of your system installation that your operating system depends on.
+There are many versions of python and no telling which you may need for a project.  Further, incorrectly installing incompatible versions or packages could damage your system and will likely cause unmanagable conflicts for your projects.  It is important to carefully manage your python and package versions *independently* of your system installation that your operating system depends on.
 
 ### 1.1  PyEnv
 
